@@ -1,3 +1,13 @@
+## [1.19.3](https://github.com/develon/places/compare/v1.19.0...v1.19.3) (2020-10-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency autocomplete.js to ^0.38.0 ([08ea21e](https://github.com/develon/places/commit/08ea21eceaa220343ec60d5aa55bf27d6351e1d3))
+* **init-places-snippet-for-js:** recommends v3 ([#1077](https://github.com/develon/places/issues/1077)) ([7c95583](https://github.com/develon/places/commit/7c955839812b7eccf3513b2be662c8353e9db198))
+
+
+
 # [1.19.0](https://github.com/algolia/places/compare/v1.18.2...v1.19.0) (2020-05-26)
 
 
