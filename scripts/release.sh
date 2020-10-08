@@ -10,12 +10,6 @@ if [ "$(node -v)" != "v$(cat .nvmrc)" ]
   exit 1
 fi
 
-if ! npm owner ls | grep -q "$(npm whoami)"
-then
-  printf "Release: Not an owner of the npm repo, ask a contributor for access\n"
-  exit 1
-fi
-
 currentBranch=`git rev-parse --abbrev-ref HEAD`
 if [ $currentBranch != 'master' ]; then
   printf "Release: You must be on master\n"
