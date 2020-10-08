@@ -1,10 +1,9 @@
 {
-  "name": "places.js",
-  "version": "1.19.0",
+  "name": "@develon/places",
+  "version": "1.19.1",
   "description": "🌐 Turn any <input> into an address autocomplete.",
   "main": "index.js",
   "types": "typings.d.ts",
-  "jsdelivr": "dist/cdn/places.min.js",
   "scripts": {
     "build": "NODE_ENV=production ./scripts/build.sh",
     "dev": "./scripts/dev.sh",
@@ -25,9 +24,11 @@
     "test": "npm run --scripts-prepend-node-path=auto test:unit && npm run --scripts-prepend-node-path=auto lint && npm run --scripts-prepend-node-path=auto build && npm run --scripts-prepend-node-path=auto test:e2e"
   },
   "author": "Algolia (https://www.algolia.com)",
-  "homepage": "https://community.algolia.com/places",
-  "bugs": "https://github.com/algolia/places/issues",
-  "repository": "https://github.com/algolia/places",
+  "bugs": "https://github.com/develon/places/issues",
+  "repository": {
+    "type" : "git",
+    "url": "git://github.com/develon/places.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "7.11.6",
@@ -89,5 +90,8 @@
     "moduleNameMapper": {
       "^.+\\.(svg)$": "<rootDir>/test/fileMock.js"
     }
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   }
 }
